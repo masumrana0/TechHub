@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const  PcBuilder = () => {
-    return (
-        <div>
-           <h2>This is Pc builder page</h2> 
-        </div>
-    );
+const PcBuilder = () => {
+  return (
+    <div>
+      <div>
+        <h2>PC Builder- Build Your Computer -TechHub </h2>
+        <div></div>
+      </div>
+    </div>
+  );
 };
 
-export default  PcBuilder;
+export default PcBuilder;
