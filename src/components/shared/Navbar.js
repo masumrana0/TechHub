@@ -26,7 +26,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-white rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow-2xl bg-white rounded-box w-52"
           >
             <li>
               <Link href="/">Home</Link>
@@ -35,30 +35,33 @@ const Navbar = () => {
               <a>Categories</a>
               <ul className="p-2">
                 <li>
-                  <a>Motherboard</a>
+                  <Link href={"/products/cpu"}>CPU/Processor</Link>
                 </li>
                 <li>
-                  <a>RAM</a>
+                  <Link href="/products/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <a>Storage Device</a>
+                  <Link href={"/products/ram"}>RAM</Link>
                 </li>
                 <li>
-                  <a>Grapics Card</a>
+                  <Link href={"/products/storage"}>Storage Device</Link>
                 </li>
                 <li>
-                  <a>Casing</a>
+                  <Link href={"/products/graphicsCard"}>Graphics Card</Link>
                 </li>
                 <li>
-                  <a>Monitor</a>
+                  <Link href={"/products/casing"}>Casing</Link>
                 </li>
                 <li>
-                  <a>Others</a>
+                  <Link href={"/products/monitor"}>Monitor</Link>
+                </li>
+                <li>
+                  <Link href={"/products/others"}>Others</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Pc-Builder</a>
+              <Link href={"/pc-builder"}>Pc-Builder</Link>
             </li>
           </ul>
         </div>
@@ -76,34 +79,34 @@ const Navbar = () => {
               <summary>Categories</summary>
               <ul className="p-2 shadow-2xl bg-white">
                 <li>
-                  <a>CPU/Processor</a>
+                  <Link href={"/products/cpu"}>CPU/Processor</Link>
                 </li>
                 <li>
-                  <a>Motherboard</a>
+                  <Link href="/products/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <a>RAM</a>
+                  <Link href={"/products/ram"}>RAM</Link>
                 </li>
                 <li>
-                  <a>Storage Device</a>
+                  <Link href={"/products/storage"}>Storage Device</Link>
                 </li>
                 <li>
-                  <a>Grapics Card</a>
+                  <Link href={"/products/graphicsCard"}>Graphics Card</Link>
                 </li>
                 <li>
-                  <a>Casing</a>
+                  <Link href={"/products/casing"}>Casing</Link>
                 </li>
                 <li>
-                  <a>Monitor</a>
+                  <Link href={"/products/monitor"}>Monitor</Link>
                 </li>
                 <li>
-                  <a>Others</a>
+                  <Link href={"/products/others"}>Others</Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>PC-Builder</a>
+            <Link href="/pc-builder">PC-Builder</Link>
           </li>
         </ul>
       </div>

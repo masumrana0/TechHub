@@ -53,8 +53,17 @@ const HomePage = () => {
           </a>
         </div>
       </header>
+      <div>
+        <h1>Featured PC Component.</h1>
+        {/* <div>
+
+          </div> */}
+      </div>
     </div>
   );
 };
+
+
+
 
 export default HomePage;
