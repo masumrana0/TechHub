@@ -9,7 +9,7 @@ const Products = ({ products }) => {
   return (
     <div className="bg-gray-300">
       {products?.data.map((product) => (
-        <CategoryCard key={product?.key} product={product} />
+        <CategoryCard key={product?._id} product={product} />
       ))}
     </div>
   );
@@ -24,7 +24,7 @@ export const getServerSideProps = async (context) => {
     `http://localhost:3000/api/product?category=${query.category}`
   );
   const data = await res.json();
-  console.log(data);
+
   return {
     props: {
       products: data,

@@ -1,6 +1,6 @@
 import Image from "next/image";
+
 const CategoryCard = ({ product }) => {
-  console.log(product);
   return (
     <div className="flex justify-center">
       <div className=" card mx-3  lg:mx-0    lg:card-side  selection: bg-white lg:w-1/2 shadow-xl my-10 border-1 border-gray-500">

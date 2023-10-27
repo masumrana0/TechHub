@@ -50,6 +50,9 @@ const Navbar = () => {
                   <Link href={"/products/graphicsCard"}>Graphics Card</Link>
                 </li>
                 <li>
+                  <Link href={"/products/PowerSupply"}>PowerSupply</Link>
+                </li>
+                <li>
                   <Link href={"/products/casing"}>Casing</Link>
                 </li>
                 <li>
@@ -92,6 +95,9 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link href={"/products/graphicsCard"}>Graphics Card</Link>
+                </li>
+                <li>
+                  <Link href={"/products/PowerSupply"}>PowerSupply</Link>
                 </li>
                 <li>
                   <Link href={"/products/casing"}>Casing</Link>
