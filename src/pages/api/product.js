@@ -1,4 +1,5 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
+const ObjectId = require("mongodb").ObjectId;
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.w9y9xep.mongodb.net/?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
@@ -31,6 +32,13 @@ async function run(req, res) {
 
         // console.log(products);
         res.send({ message: "Success", status: 200, data: products });
+      } else if (req.query.id) {
+        const id = req.query.id;
+        console.log(id);
+        const product = await productCollection.findOne({
+          _id: new ObjectId(id),
+        });
+        res.send({ message: "Success", status: 200, data: product });
       } else if (req.query.limit) {
         const limit = parseInt(req.query.limit);
 
@@ -40,10 +48,10 @@ async function run(req, res) {
           .toArray();
 
         res.send({ message: "Success", status: 200, data: products });
+      } else {
+        const products = await productCollection.find({}).toArray();
+        res.send({ message: "Success", status: 200, data: products });
       }
-      const products = await productCollection.find({}).toArray();
-
-      res.send(products);
     }
   } catch (error) {
     console.log(error);
