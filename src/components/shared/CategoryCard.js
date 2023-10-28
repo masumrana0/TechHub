@@ -1,8 +1,16 @@
+import { storeCpu } from "@/Redux/Slices/productSlice";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineStar } from "react-icons/ai";
+import { useDispatch } from "react-redux";
 
 const CategoryCard = ({ product }) => {
+  const dispatch = useDispatch();
+  const handleStoreingProduct = () => {
+    if (product.category == "CPU") {
+      dispatch(storeCpu(product));
+    } 
+  };
   return (
     <Link href={`/productDetails/${product?._id}`}>
       <div className="flex justify-center">
@@ -35,7 +43,12 @@ const CategoryCard = ({ product }) => {
               </p>
             </div>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Add to Builder</button>
+              <button
+                onClick={handleStoreingProduct}
+                className="btn btn-primary"
+              >
+                Add to Builder
+              </button>
             </div>
           </div>
         </div>

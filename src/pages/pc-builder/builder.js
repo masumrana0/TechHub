@@ -2,7 +2,32 @@ import Link from "next/link";
 import { BsCpuFill, BsMotherboardFill } from "react-icons/bs";
 import { GiComb } from "react-icons/gi";
 import { MdCalendarViewDay } from "react-icons/md";
+import { useSelector, useDispatch } from "react-redux";
+
 const PcBuilder = () => {
+  // const productSelector = (state) => state.
+  const isAllFilupStatus = useSelector((state) => state.product.isAllFilup);
+  const cpuData = useSelector((state) => state.product.cpu);
+  const motherboardData = useSelector((state) => state.product.motherborad);
+  const ramData = useSelector((state) => state.product.ram);
+  const storageData = useSelector((state) => state.product.storage);
+  const GrapihisCardData = useSelector((state) => state.product.GrapihisCard);
+  const powerSupplyData = useSelector((state) => state.product.powerSupply);
+  const casingData = useSelector((state) => state.product.casing);
+  const monitorData = useSelector((state) => state.product.monitor);
+
+  // console.log(
+  //   isAllFilupStatus,
+  //   cpuData,
+  //   motherboardData,
+  //   ramData,
+  //   storageData,
+  //   GrapihisCardData,
+  //   powerSupplyData,
+  //   casingData,
+  //   monitorData
+  // );
+
   return (
     <div className="flex justify-center my-10 px-3 sm:px-0">
       <div className="w-full sm:w-1/2 border-2 border-blue-400">
