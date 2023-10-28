@@ -1,4 +1,5 @@
 import CategoryCard from "@/components/shared/CategoryCard";
+import HomeCard from "@/components/shared/HomeCard";
 import { useRouter } from "next/router";
 const Products = ({ products }) => {
   const router = useRouter();
@@ -7,10 +8,12 @@ const Products = ({ products }) => {
   }
 
   return (
-    <div className="bg-gray-300">
-      {products?.data.map((product) => (
-        <CategoryCard key={product?._id} product={product} />
-      ))}
+    <div className="">
+      <div className="bg-gray-300   flex flex-col lg:flex-row lg:flex-wrap gap-20 justify-center py-20   ">
+        {products?.data.map((product) => (
+          <HomeCard key={product?._id} product={product} />
+        ))}
+      </div>
     </div>
   );
 };
@@ -21,7 +24,7 @@ export default Products;
 export const getServerSideProps = async (context) => {
   const { query } = context;
   const res = await fetch(
-    `http://localhost:3000/api/product?category=${query.category}`
+    `http://localhost:3000/api/product?category=${query.cardId}`
   );
   const data = await res.json();
 

@@ -64,7 +64,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link href={"/pc-builder"}>Pc-Builder</Link>
+              <Link href={"/pc-builder/builder"}>Pc-Builder</Link>
             </li>
           </ul>
         </div>
@@ -112,7 +112,7 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <Link href="/pc-builder">PC-Builder</Link>
+            <Link href={"/pc-builder/builder"}>Pc-Builder</Link>
           </li>
         </ul>
       </div>

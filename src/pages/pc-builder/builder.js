@@ -1,4 +1,7 @@
-import { BsCpu, BsFillCpuFill } from "react-icons/fa";
+import Link from "next/link";
+import { BsCpuFill, BsMotherboardFill } from "react-icons/bs";
+import { GiComb } from "react-icons/gi";
+import { MdCalendarViewDay } from "react-icons/md";
 const PcBuilder = () => {
   return (
     <div className="flex justify-center my-10 px-3 sm:px-0">
@@ -19,36 +22,60 @@ const PcBuilder = () => {
 
           <div className="mt-5">
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
-              <h1>CPU</h1>
-              <button className="btn btn-outline">Choose</button>
+              <h1 className="">CPU</h1>
+              <Link href={"/pc-builder/cpu"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
-              <h1>Motherboard</h1>
-              <button className="btn btn-outline">Choose</button>
+              <h1 className="  gap-3">Motherboard</h1>
+              <Link href={"/pc-builder/motherboard"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
-              <h1>RAM</h1>
-              <button className="btn btn-outline">Choose</button>
+              <h1>Ram</h1>
+              <Link href={"/pc-builder/ram"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
-              <h1>Grapics Card</h1>
-              <button className="btn btn-outline">Choose</button>
+              <h1>Graphics Card</h1>
+              <Link href={"/pc-builder/graphicscard"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <h1>Storage Device</h1>
-              <button className="btn btn-outline">Choose</button>
+              <Link href={"/pc-builder/storage"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <h1>Power Supply Unit</h1>
-              <button className="btn btn-outline">Choose</button>
+              <Link href={"/pc-builder/powerSupply"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <h1>Casing</h1>
-              <button className="btn btn-outline">Choose</button>
+              <Link href={"/pc-builder/casing"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <h1>Monitor</h1>
-              <button className="btn btn-outline">Choose</button>
+              <Link href={"/pc-builder/monitor"}>
+                {" "}
+                <button className="btn btn-outline">Choose</button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center py-5">

@@ -34,7 +34,6 @@ async function run(req, res) {
         res.send({ message: "Success", status: 200, data: products });
       } else if (req.query.id) {
         const id = req.query.id;
-        console.log(id);
         const product = await productCollection.findOne({
           _id: new ObjectId(id),
         });
