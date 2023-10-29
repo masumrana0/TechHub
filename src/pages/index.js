@@ -89,6 +89,7 @@ const HomePage = ({ products }) => {
   );
 };
 
+// SSG implementation
 export async function getStaticProps() {
   const res = await fetch("http://localhost:3000/api/product?limit=6");
   const data = await res.json();

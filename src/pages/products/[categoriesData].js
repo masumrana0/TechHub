@@ -6,7 +6,7 @@ const Products = ({ products }) => {
   if (!products) {
     return <span className="loading loading-dots loading-lg"></span>;
   }
-  console.log(products);
+
   return (
     <div className="">
       <div className="bg-gray-300 flex flex-col lg:flex-row lg:flex-wrap gap-20 justify-center py-20">
@@ -21,7 +21,6 @@ const Products = ({ products }) => {
 export default Products;
 
 // SSG implemantation
-
 export async function getStaticPaths() {
   const categories = [
     "CPU",
@@ -41,9 +40,10 @@ export async function getStaticPaths() {
   return { paths, fallback: true };
 }
 
+
 export async function getStaticProps({ params }) {
   const { categoriesData } = params;
-  // Fetch data based on the category
+
   const res = await fetch(
     `http://localhost:3000/api/product?category=${categoriesData}`
   );

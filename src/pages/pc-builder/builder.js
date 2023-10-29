@@ -41,8 +41,7 @@ const PcBuilder = () => {
     ramData &&
     storageData &&
     powerSupplyData &&
-    casingData &&
-    monitorData
+    casingData
   ) {
     dispatch(isAllFilup(true));
   }
@@ -67,9 +66,9 @@ const PcBuilder = () => {
 
           <div className="mt-5">
             {/* cpu card  */}
-            <div className="flex justify-around border-2 border-blue-400 py-5 px-4 mb-4">
+            <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div>
-                <h1>CPU</h1>
+                <h3>CPU</h3>
                 <Image
                   className={`${!cpuData?.img && "hidden"}`}
                   src={cpuData?.img}
@@ -98,7 +97,7 @@ const PcBuilder = () => {
             {/* Motherboard card  */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4  mb-4">
               <div className="">
-                <h1 className=" ">Motherboard</h1>
+                <h3 className=" ">Motherboard</h3>
                 <Image
                   className={`${!motherboardData?.img && "hidden"}`}
                   src={motherboardData?.img}
@@ -129,7 +128,7 @@ const PcBuilder = () => {
             {/* Ram card  */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div className="">
-                <h1>Ram</h1>
+                <h3>Ram</h3>
                 <Image
                   className={`${!ramData?.img && "hidden"}`}
                   src={ramData?.img}
@@ -156,7 +155,7 @@ const PcBuilder = () => {
             {/* GraphicsCard  */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div>
-                <h1>Graphics Card</h1>
+                <h3>Graphics Card</h3>
                 <Image
                   className={`${!GrapihisCardData?.img && "hidden"}`}
                   src={GrapihisCardData?.img}
@@ -186,7 +185,7 @@ const PcBuilder = () => {
             {/* storage device  */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div>
-                <h1>Storage Device</h1>
+                <h3>Storage Device</h3>
                 <Image
                   className={`${!storageData?.img && "hidden"}`}
                   src={storageData?.img}
@@ -215,7 +214,7 @@ const PcBuilder = () => {
             {/* power Suply */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div>
-                <h1>Power Supply Unit</h1>
+                <h3>Power Supply Unit</h3>
                 <Image
                   className={`${!powerSupplyData?.img && "hidden"}`}
                   src={powerSupplyData?.img}
@@ -245,7 +244,7 @@ const PcBuilder = () => {
             {/* casing  */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div>
-                <h1>Casing</h1>
+                <h3>Casing</h3>
                 <Image
                   className={`${!casingData?.img && "hidden"}`}
                   src={casingData?.img}
@@ -274,7 +273,7 @@ const PcBuilder = () => {
             {/* monitor  */}
             <div className="flex justify-between border-2 border-blue-400 py-5 px-4 mb-4">
               <div>
-                <h1>Monitor</h1>
+                <h3>Monitor</h3>
                 <Image
                   className={`${!monitorData?.img && "hidden"}`}
                   src={monitorData?.img}
