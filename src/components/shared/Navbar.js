@@ -29,7 +29,9 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow-2xl bg-white rounded-box w-52"
           >
             <li>
-              <Link href="/">Home</Link>
+              <button>
+                <Link href="/">Home</Link>
+              </button>
             </li>
             <li>
               <a>Categories</a>

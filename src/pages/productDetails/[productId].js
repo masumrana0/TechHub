@@ -171,12 +171,22 @@ const ProductDetails = ({ product }) => {
 
 export default ProductDetails;
 
-// server side randering
-export async function getServerSideProps(context) {
-  const { query } = context;
+// SSG  Implementation
+export async function getStaticPaths() {
+  const res = await fetch(`http://localhost:3000/api/product`);
+  const products = await res.json();
+  const paths = products?.data?.map((product) => ({
+    params: { productId: product._id },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(context) {
+  const { params } = context;
 
   const res = await fetch(
-    `http://localhost:3000/api/product/?id=${query.productId}`
+    `http://localhost:3000/api/product/?id=${params.productId}`
   );
   const product = await res.json();
 

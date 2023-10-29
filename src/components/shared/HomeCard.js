@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineStar } from "react-icons/ai";
 const HomeCard = ({ product }) => {
+  if (!product) {
+    return <span className="loading loading-dots loading-lg"></span>;
+  }
   return (
     <Link href={`/productDetails/${product?._id}`}>
       <div className="card card-compact w-50  lg:w-96 bg-white shadow-xl ">
@@ -30,7 +33,7 @@ const HomeCard = ({ product }) => {
               {product?.averageRating}x
               <AiOutlineStar className="text-xl text-amber-600 " />
             </p>
-            <button className="btn btn-primary">Buy Now</button>
+            <button className="btn text-white">Button</button>
           </div>
         </div>
       </div>

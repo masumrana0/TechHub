@@ -71,20 +71,11 @@ const productSlice = createSlice({
         state.monitor = [];
         state.isAllFilup = false;
       }
-      state.storage.push(action.payload);
+      state.monitor.push(action.payload);
     },
 
-    isAllFilup: (state) => {
-      if (
-        state.cpu.length > 0 &&
-        state.motherborad.length > 0 &&
-        state.ram.length > 0 &&
-        state.powerSupply.length > 0 &&
-        state.storage.length > 0 &&
-        state.monitor.length > 0
-      ) {
-        state.isAllFilup = true;
-      }
+    isAllFilup: (state, action) => {
+      state.isAllFilup = action.payload;
     },
   },
 });
@@ -98,6 +89,7 @@ export const {
   storePowerSupply,
   storeCasing,
   storeMonitor,
+  isAllFilup,
 } = productSlice.actions;
 
 export default productSlice.reducer;
