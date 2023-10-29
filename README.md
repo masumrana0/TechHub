@@ -1,40 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TechHub
 
-## Getting Started
+TechHub is a one-stop shop for all your PC customization needs. With our extensive selection of components and fine-tuning tools, you can build a PC that perfectly aligns with your preferences and computing needs.
 
-First, run the development server:
+## Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Explore a wide range of components, including processors, motherboards, graphics cards, memory, storage, power supplies, and cases.
+- Fine-tune your selections with our interactive build wizard and compatibility checker.
+- Enjoy the satisfaction of building a PC that is truly your own.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Benefits:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Get the latest and greatest components at competitive prices.
+- Build a PC that is perfectly tailored to your needs and budget.
+- Experience the thrill of creating something from scratch.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technology:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+TechHub is built using Next.js, NextAuth, MongoDB, and Redux. This stack provides us with the performance, scalability, and security we need to deliver a best-in-class PC customization experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Call to Action:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Discover the future of PC customization at TechHub and unleash your creative potential in the realm of technology.
