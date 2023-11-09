@@ -21,3 +21,6 @@ TechHub is built using Next.js, NextAuth, MongoDB, and Redux. This stack provide
 ## Call to Action:
 
 Discover the future of PC customization at TechHub and unleash your creative potential in the realm of technology.
+
+
+# output:-  https://pc-builder-client-nine.vercel.app/
